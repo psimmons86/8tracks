@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Mood Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="login-container">
+        <h1>Spotify Mood Player</h1>
+        <button id="login-button" class="btn">Login with Spotify</button>
+      </div>
+
+      <div id="player-container" class="hidden">
+        <h2>Select Your Mood</h2>
+        <div class="mood-grid">
+          <button class="mood-btn" data-mood="happy">😊 Happy</button>
+          <button class="mood-btn" data-mood="chill">😌 Chill</button>
+          <button class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+          <button class="mood-btn" data-mood="sad">😢 Sad</button>
+          <button class="mood-btn" data-mood="focused">🎯 Focused</button>
+          <button class="mood-btn" data-mood="workout">💪 Workout</button>
+        </div>
+
+        <h2>Select Genre</h2>
+        <div class="genre-grid">
+          <button class="genre-btn" data-genre="hip-hop">Hip Hop</button>
+          <button class="genre-btn" data-genre="r-n-b">R&B</button>
+          <button class="genre-btn" data-genre="pop">Pop</button>
+          <button class="genre-btn" data-genre="rock">Rock</button>
+          <button class="genre-btn" data-genre="jazz">Jazz</button>
+          <button class="genre-btn" data-genre="electronic">Electronic</button>
+          <button class="genre-btn" data-genre="classical">Classical</button>
+          <button class="genre-btn" data-genre="latin">Latin</button>
+        </div>
+
+        <div id="playlist-container" class="hidden">
+          <h3>Recommended Playlist</h3>
+          <div id="playlist-info"></div>
+          <div id="player-controls">
+            <button id="prev-button">Previous</button>
+            <button id="play-button">Play</button>
+            <button id="next-button">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
